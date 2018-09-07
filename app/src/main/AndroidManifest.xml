@@ -16,10 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuActivity"
+        <activity
+            android:name=".MenuActivity"
             android:label="앱 선택"
-            android:theme="@style/Animation.AppCompat.Dialog">
-        </activity>
+            android:theme="@style/Animation.AppCompat.Dialog" />
+        <activity android:name=".TimePickerButton"
+            ></activity>
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@
         android:layout_marginTop="285dp"
         app:layout_constraintBottom_toTopOf="@+id/app_icon2"
         app:layout_constraintEnd_toEndOf="@+id/app_icon2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/app_icon2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
@@ -45,17 +46,23 @@
         app:layout_constraintTop_toBottomOf="@+id/app_icon2"
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="44dp"
+
+    <org.androidtown.sksunny.TimePickerButton
+        android:id="@+id/btn_timepicker"
+        android:layout_width="242dp"
+        android:layout_height="87dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="onButton1Clicked"
-        android:text="ff"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/_00_00"
+        app:dateFormat="a : hh시 mm분"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
 
 </android.support.constraint.ConstraintLayout>
