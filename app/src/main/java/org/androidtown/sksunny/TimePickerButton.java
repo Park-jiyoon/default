@@ -15,7 +15,6 @@ import java.util.Calendar;
 import java.util.Locale;
 
 
-
 public class TimePickerButton extends AppCompatButton implements TimePickerDialog.OnTimeSetListener{
     private TimePickerDialog.OnTimeSetListener mTimeSetListener;
     private TimePickerDialog mDialog;
@@ -89,6 +88,7 @@ public class TimePickerButton extends AppCompatButton implements TimePickerDialo
         }
 
         if (this.mTimeSetListener != null) this.mTimeSetListener.onTimeSet(timePicker, i, i1);
+
     }
 
     @Override
@@ -96,4 +96,5 @@ public class TimePickerButton extends AppCompatButton implements TimePickerDialo
         super.onDetachedFromWindow();
         releaseTimePickerDialog();
     }
+
 }
